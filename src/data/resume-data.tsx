@@ -29,7 +29,7 @@ export const RESUME_DATA = {
   summary:
     "As a Full Stack Engineer, I specialize in taking products from concept to launch. I excel in leading teams and creating environments where individuals perform at their best. Currently, I work mostly with TypeScript, React, Node.js, and GraphQL. I have over 8 years of experience working remotely with companies worldwide.",
   avatarUrl:
-    "https://res.cloudinary.com/dtytwe8qt/image/upload/v1724447228/assets/nrhf0unmrwxzvrvcqj6f.jpg",
+    "https://res.cloudinary.com/dlfozpwa2/image/upload/v1724608860/cv/shahreaz.png",
   personalWebsiteUrl: "https://jarocki.me",
   contact: {
     email: "ashahreaz@gmail.com",
@@ -74,7 +74,7 @@ export const RESUME_DATA = {
   ],
   work: [
     {
-      company: "Evident",
+      company: "EvidentBD",
       link: "https://www.evidentbd.com/",
       badges: ["On-Site"],
       title: "Software Engineer",
@@ -82,10 +82,10 @@ export const RESUME_DATA = {
       start: "2022",
       end: null,
       description:
-        "Leading the development of the Film.io platform. Technologies: React, TypeScript, Node.js",
+        "Web Developer at EvidentBD, leading the front-end team and developing back-end services. I ensure seamless full-stack integration, collaborating with cross-functional teams to deliver high-quality, user-centric web applications",
     },
     {
-      company: "Evident",
+      company: "EvidentBD",
       link: "https://www.evidentbd.com/",
       badges: ["On-Site"],
       title: "Jr. Software Engineer",
@@ -93,7 +93,7 @@ export const RESUME_DATA = {
       start: "2021",
       end: "2022",
       description:
-        "Leading the development of the Film.io platform. Technologies: React, TypeScript, Node.js",
+        "Junior Web Developer at EvidentBD, contributed to designing, developing, and maintaining web applications, with a focus on front-end features and back-end optimization. Gained experience with modern web technologies and best coding practices.",
     },
     {
       company: "Computer Services Ltd.",
@@ -119,37 +119,38 @@ export const RESUME_DATA = {
   ],
   projects: [
     {
-      title: "Parabol",
-      techStack: [
-        "Full Stack Developer",
-        "TypeScript",
-        "React",
-        "Node.js",
-        "GraphQL",
-      ],
-      description:
-        "The Agile meeting co-pilot that delivers better meetings with less effort",
-      logo: ParabolLogo,
-      link: {
-        label: "github.com",
-        href: "https://parabol.co/",
-      },
-    },
-    {
-      title: "Evercast",
+      title: "MYE",
       techStack: [
         "Lead Frontend Developer",
         "TypeScript",
-        "React",
-        "Node.js",
-        "GraphQL",
+        "Next.js",
+        "shadcn/ui",
+        "jotai",
       ],
       description:
-        "Creative collaboration platform that combines video conferencing and HD media streaming",
+        "MYE is a platform for managing orders, stock, and payments across eBay, Amazon, WooCommerce, and Otto.",
+      logo: ParabolLogo,
+      link: {
+        label: "mye",
+        href: "https://www.manageyourecommerce.com",
+      },
+    },
+    {
+      title: "Ak",
+      techStack: [
+        "Lead Frontend Developer",
+        "TypeScript",
+        "Next.js",
+        "shadcn/ui",
+        "jotai",
+        "nuqs",
+      ],
+      description:
+        "AK is an HR web app for streamlined employee attendance management.",
       logo: EvercastLogo,
       link: {
-        label: "evercast.us",
-        href: "https://www.evercast.us/",
+        label: "ak",
+        href: "https://www.attendancekeeper.net/",
       },
     },
     {
