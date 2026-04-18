@@ -1,11 +1,11 @@
+import { Badge } from "./ui/badge";
 import {
   Card,
-  CardHeader,
   CardContent,
   CardDescription,
+  CardHeader,
   CardTitle,
 } from "./ui/card";
-import { Badge } from "./ui/badge";
 
 interface Props {
   title: string;
@@ -25,6 +25,7 @@ export function ProjectCard({ title, description, tags, link }: Props) {
                 href={link}
                 target="_blank"
                 className="inline-flex items-center gap-1 hover:underline"
+                rel="noopener"
               >
                 {title}{" "}
                 <span className="size-1 rounded-full bg-green-500"></span>
