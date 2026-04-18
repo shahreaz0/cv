@@ -1,30 +1,15 @@
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
-import {
-  AmbitLogo,
-  BarepapersLogo,
-  BimLogo,
-  CDGOLogo,
-  ConsultlyLogo,
-  EvercastLogo,
-  Howdy,
-  JarockiMeLogo,
-  Minimal,
-  MobileVikingsLogo,
-  MonitoLogo,
-  ParabolLogo,
-  TastyCloudLogo,
-  YearProgressLogo,
-} from "@/images/logos";
+import { ConsultlyLogo, JarockiMeLogo, ParabolLogo } from "@/images/logos";
 
 export const RESUME_DATA = {
   name: "Shahreaz Bin Alam",
-  initials: "BJ",
+  initials: "SBA",
   location: "Dhaka, Bangladesh",
   locationLink: "https://www.google.com/maps/place/dhaka",
   about:
     "Detail-oriented Full Stack Engineer dedicated to building high-quality products.",
   summary:
-    "As a Full Stack Engineer, I specialize in taking products from concept to launch. I excel in leading teams and creating environments where individuals perform at their best. Currently, I work mostly with TypeScript, React, Node.js, and GraphQL. I have over 8 years of experience working remotely with companies worldwide.",
+    "Full Stack Engineer specializing in building high-quality, scalable products from concept to launch. Experienced in leading teams, optimizing performance, and designing complex systems using modern web technologies.",
   avatarUrl:
     "https://res.cloudinary.com/dlfozpwa2/image/upload/v1724608860/cv/shahreaz.png",
   personalWebsiteUrl: "https://jarocki.me",
@@ -52,80 +37,95 @@ export const RESUME_DATA = {
   education: [
     {
       school: "University of Asia Pacific",
-      degree: "Bachelor's Degree in Computer Science and Engineering",
+      degree: "Bachelor of Science in Computer Science and Engineering",
       start: "2016",
       end: "2021",
     },
-    {
-      school: "St. Joseph Higher Secondary School",
-      degree: "Higher Secondary School Certificate",
-      start: "2011",
-      end: "2013",
-    },
-    {
-      school: "Dhanmondi Govt. Boy's High School",
-      degree: " Secondary School Certificate",
-      start: "2009",
-      end: "2011",
-    },
+    // {
+    //   school: "St. Joseph Higher Secondary School",
+    //   degree: "Higher Secondary School Certificate",
+    //   start: "2011",
+    //   end: "2013",
+    // },
+    // {
+    //   school: "Dhanmondi Govt. Boy's High School",
+    //   degree: " Secondary School Certificate",
+    //   start: "2009",
+    //   end: "2011",
+    // },
   ],
   work: [
     {
       company: "EvidentBD",
       link: "https://www.evidentbd.com/",
-      badges: ["On-Site"],
+      badges: [],
       title: "Software Engineer",
       logo: ConsultlyLogo,
-      start: "2022",
-      end: null,
+      start: "June 2023",
+      end: "Present",
       description:
-        "Web Developer at EvidentBD, leading the front-end team and developing back-end services. I ensure seamless full-stack integration, collaborating with cross-functional teams to deliver high-quality, user-centric web applications",
+        "Led front-end + back-end development for production products (MYE, AK, IK), defining component architecture and migrating projects to Next.js. Improved performance by 60% LCP reduction. Built a full-stack shipping label system integrating Amazon, DHL, FedEx, and more. Optimized backend workflows, reducing complexity by 45% and improving bulk performance by 10-15x. Implemented scheduler systems and Webhook-as-a-Service platforms.",
     },
     {
       company: "EvidentBD",
       link: "https://www.evidentbd.com/",
-      badges: ["On-Site"],
-      title: "Jr. Software Engineer",
+      badges: [],
+      title: "Junior Software Engineer",
       logo: ConsultlyLogo,
-      start: "2021",
-      end: "2022",
+      start: "October 2021",
+      end: "June 2023",
       description:
-        "Junior Web Developer at EvidentBD, contributed to designing, developing, and maintaining web applications, with a focus on front-end features and back-end optimization. Gained experience with modern web technologies and best coding practices.",
-    },
-    {
-      company: "Computer Services Ltd.",
-      link: "https://www.evidentbd.com/",
-      badges: ["On-Site"],
-      title: "intern",
-      logo: ConsultlyLogo,
-      start: "2019",
-      end: "2019",
-      description:
-        "Managed office files, updated contact lists, developed basic websites, prepared client presentations, and monitored marketing campaigns.",
+        "Migrated legacy Laravel applications to React SPA architecture. Developed front-end for HRMS and IMS products, along with backend microservices for worklogs and authentication. Built a Postage Storage Service with fast search and reporting.",
     },
   ],
   skills: [
     "JavaScript",
     "TypeScript",
-    "React/Next.js",
+    "Go",
+    "SQL",
+    "React",
+    "Next.js",
+    "Tailwind",
+    "shadcn/ui",
+    "Jotai",
+    "React Query",
+    "React Hook Form",
     "Node.js",
+    "Express",
+    "Fastify",
+    "NestJS",
+    "Bun",
+    "Hono",
+    "PostgreSQL",
     "MongoDB",
-    "Mongoose",
-    "Postgres",
-    "Prisma/Drizzle",
+    "Redis",
+    "Prisma",
+    "Drizzle",
+    "RabbitMQ",
+    "BullMQ",
+    "Docker",
+    "Kubernetes",
+    "AWS",
+    "GCP",
+    "CI/CD",
+    "MCP servers",
+    "OpenAI SDK",
+    "LangChain",
+    "Microservices",
   ],
   projects: [
     {
-      title: "MYE",
+      title: "Manage Your Ecommerce (MYE)",
       techStack: [
-        "Lead Frontend Developer",
-        "TypeScript",
         "Next.js",
         "shadcn/ui",
-        "jotai",
+        "Jotai",
+        "Tailwind",
+        "Tanstack Query",
+        "RHF",
       ],
       description:
-        "MYE is a platform for managing orders, stock, and payments across eBay, Amazon, WooCommerce, and Otto.",
+        "Multi-vendor SaaS platform for order automation, shipping labels, and business reporting.",
       logo: ParabolLogo,
       link: {
         label: "mye",
@@ -133,146 +133,51 @@ export const RESUME_DATA = {
       },
     },
     {
-      title: "Ak",
+      title: "MYE Postage Service",
       techStack: [
-        "Lead Frontend Developer",
-        "TypeScript",
-        "Next.js",
-        "shadcn/ui",
-        "jotai",
-        "nuqs",
+        "Bun",
+        "Hono",
+        "PostgreSQL",
+        "Redis",
+        "RabbitMQ",
+        "BullMQ",
+        "Docker",
       ],
       description:
-        "AK is an HR web app for streamlined employee attendance management.",
-      logo: EvercastLogo,
-      link: {
-        label: "ak",
-        href: "https://www.attendancekeeper.net/",
-      },
+        "Full-stack shipping platform allowing users to connect carriers, purchase labels, and track shipments.",
+      logo: ParabolLogo,
     },
     {
-      title: "Consultly",
+      title: "MYE Scheduler & Auth Service",
       techStack: [
-        "Side Project",
+        "Node.js",
         "TypeScript",
-        "Next.js",
-        "Vite",
-        "GraphQL",
-        "WebRTC",
+        "Zod",
+        "Prisma",
+        "Redis",
+        "better-auth",
       ],
-      description: "A platform to build and grow your online business",
-      logo: ConsultlyLogo,
-      link: {
-        label: "consultly.com",
-        href: "https://consultly.com/",
-      },
+      description:
+        "User-configurable scheduling system and multi-tenant authentication system with modern login flows.",
+      logo: ParabolLogo,
     },
     {
-      title: "Monito",
-      techStack: ["Side Project", "TypeScript", "Next.js", "Browser Extension"],
+      title: "Other Projects",
+      techStack: [
+        "GitHub",
+        "AttendanceKeeper",
+        "InventoryKeeper",
+        "XWebhook",
+        "Shopix",
+        "Billsheba",
+      ],
       description:
-        "Browser extension that records everything happening in a web application",
-      logo: MonitoLogo,
-      link: {
-        label: "monito.dev",
-        href: "https://monito.dev/",
-      },
-    },
-    {
-      title: "Jarocki.me",
-      techStack: ["Side Project", "Next.js", "MDX"],
-      description:
-        "Personal website and blog. Built with Next.js and Notion API",
+        "A collection of various open-source and professional projects.",
       logo: JarockiMeLogo,
       link: {
         label: "github.com",
-        href: "https://jarocki.me/",
+        href: "https://github.com/shahreaz0",
       },
-    },
-    {
-      title: "Minimal",
-      techStack: ["Side Project", "Next.js", "Puppeteer"],
-      description:
-        "Minimalist calendars, habit trackers, and planners generator",
-      logo: Minimal,
-      link: {
-        label: "useminimal.com",
-        href: "https://useminimal.com/",
-      },
-    },
-    {
-      title: "Barepapers",
-      techStack: ["Side Project", "Next.js", "Puppeteer"],
-      description:
-        "Generates beautiful wallpapers using random shapes and gradients",
-      logo: BarepapersLogo,
-      link: {
-        label: "barepapers.com",
-        href: "https://barepapers.com/",
-      },
-    },
-    {
-      title: "Year progress",
-      techStack: ["Side Project", "TypeScript", "Next.js"],
-      description: "Tracks current year progress and displays a countdown",
-      logo: YearProgressLogo,
-      link: {
-        label: "getyearprogress.com",
-        href: "https://getyearprogress.com/",
-      },
-    },
-    {
-      title: "Mobile Vikings",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application for leading virtual mobile operator in Poland",
-      logo: MobileVikingsLogo,
-      link: {
-        label: "mobilevikings.pl",
-        href: "https://mobilevikings.pl/",
-      },
-    },
-    {
-      title: "Howdy",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description: "Howdy is a place for joining communities you care about",
-      logo: Howdy,
-      link: {
-        label: "play.google.com",
-        href: "https://howdy.co/",
-      },
-    },
-    {
-      title: "Tastycloud",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application for managing and displaying restaurant menus in kiosk mode",
-      logo: TastyCloudLogo,
-      link: {
-        label: "tastycloud.fr",
-        href: "https://www.tastycloud.fr/",
-      },
-    },
-    {
-      title: "Ambit",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application that helps with sharing your contact details",
-      logo: AmbitLogo,
-    },
-    {
-      title: "Bim",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application that helps with booking a table in a restaurants",
-      logo: BimLogo,
-    },
-    {
-      title: "Canal Digital GO",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Video streaming mobile application for Canal Digital subscribers",
-      logo: CDGOLogo,
     },
   ],
 } as const;
