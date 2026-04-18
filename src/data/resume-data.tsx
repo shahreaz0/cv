@@ -1,5 +1,5 @@
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
-import { ConsultlyLogo, JarockiMeLogo, ParabolLogo } from "@/images/logos";
+import { ConsultlyLogo, EvercastLogo, ParabolLogo } from "@/images/logos";
 
 export const RESUME_DATA = {
   name: "Shahreaz Bin Alam",
@@ -146,6 +146,10 @@ export const RESUME_DATA = {
       description:
         "Full-stack shipping platform allowing users to connect carriers, purchase labels, and track shipments.",
       logo: ParabolLogo,
+      link: {
+        label: "api.manageyourecommerce.com",
+        href: "https://api.manageyourecommerce.com/mps/reference",
+      },
     },
     {
       title: "MYE Scheduler & Auth Service",
@@ -162,21 +166,47 @@ export const RESUME_DATA = {
       logo: ParabolLogo,
     },
     {
-      title: "Other Projects",
-      techStack: [
-        "GitHub",
-        "AttendanceKeeper",
-        "InventoryKeeper",
-        "XWebhook",
-        "Shopix",
-        "Billsheba",
-      ],
+      title: "Attendance Keeper",
+      techStack: ["TypeScript", "Next.js", "shadcn/ui", "Jotai", "nuqs"],
       description:
-        "A collection of various open-source and professional projects.",
-      logo: JarockiMeLogo,
+        "HR management system for streamlined attendance tracking. Built worklog microservices, designed frontend architecture, and implemented Kanban-based feature tracking.",
+      logo: EvercastLogo,
+      link: {
+        label: "attendancekeeper.net",
+        href: "https://www.attendancekeeper.net/",
+      },
+    },
+    {
+      title: "Billsheba",
+      techStack: ["Next.js", "TypeScript", "PostgreSQL", "Tailwind"],
+      description:
+        "Professional internet user management platform for ISPs. Features centralized user management, usage analytics, and comprehensive network control.",
+      logo: ConsultlyLogo,
+      link: {
+        label: "billsheba.com",
+        href: "https://billsheba.com/",
+      },
+    },
+    {
+      title: "XWebhook",
+      techStack: ["Bun", "Hono", "Prisma", "BullMQ", "Zod"],
+      description:
+        "A 'Webhooks as a Service' platform similar to Svix. Features reliable asynchronous delivery, automatic retries, and comprehensive message tracking.",
+      logo: ConsultlyLogo,
       link: {
         label: "github.com",
-        href: "https://github.com/shahreaz0",
+        href: "https://github.com/shahreaz0/xwebhook",
+      },
+    },
+    {
+      title: "Shopix",
+      techStack: ["TypeScript", "Node.js", "PostgreSQL", "Docker"],
+      description:
+        "E-commerce platform built with a microservice architecture. Features modern online shopping workflows, user authentication, and containerized deployment.",
+      logo: ConsultlyLogo,
+      link: {
+        label: "github.com",
+        href: "https://github.com/shahreaz0/shopix",
       },
     },
   ],
